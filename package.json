@@ -4,9 +4,9 @@
   "description": "Node.js Demo for JWT Authentication",
   "main": "server.js",
   "scripts": {
-  "test": "echo \"⚠️ No tests configured yet\" && exit 0",
-  "start": "node server.js"
- },
+    "test": "echo \"⚠️ No tests configured yet\" && exit 0",
+    "start": "node server.js"
+  },
   "keywords": [
     "node.js",
     "jwt",
@@ -26,7 +26,7 @@
     "helmet": "^8.1.0",
     "hpp": "^0.2.3",
     "jsonwebtoken": "^9.0.0",
-    "mysql2": "^2.3.3",
+    "mysql2": "^3.15.3",
     "sequelize": "^6.32.1",
     "xss-clean": "^0.1.4"
   }
