@@ -7,13 +7,10 @@ const sequelize = new Sequelize(
   config.PASSWORD,
   {
     host: config.HOST,
+    port: config.PORT,
     dialect: config.dialect,
-    pool: {
-      max: config.pool.max,
-      min: config.pool.min,
-      acquire: config.pool.acquire,
-      idle: config.pool.idle
-    }
+    dialectOptions: config.dialectOptions,
+    pool: config.pool
   }
 );
 
