@@ -5,7 +5,12 @@ const bcrypt = require("bcryptjs");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: [
+    "https://alterlapsus.github.io",
+    "http://localhost:8081"  // para desarrollo local
+  ],
+  credentials: true,
+  optionsSuccessStatus: 200
 };
 
 app.use(cors(corsOptions));
